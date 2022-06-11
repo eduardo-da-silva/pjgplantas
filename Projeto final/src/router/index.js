@@ -10,7 +10,7 @@ const routes = [
     component: () => import('@/layouts/Full.vue'),
     children: [
       {
-        path: '/',
+        path: '',
         name: 'Home',
         component: Home
       },

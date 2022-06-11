@@ -43,25 +43,18 @@
     </div>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "@/plugins/firebase";
+
 export default {
   name: "e",
   data() {
     return {
-      plantas: [],
+      plantas: [
+          {id: 1, nome: "Orquídea", valor: "R$50,00"},
+          {id: 2, nome: "Orquídea 2", valor: "R$150,00"},
+          {id: 3, nome: "Orquídea 3", valor: "R$250,00"},
+      ],
     };
-  },
-  async created() {
-    const querySnapshot = await getDocs(collection(db, "plantas"));
-    querySnapshot.forEach((planta) => {
-      // doc.data() is never undefined for query doc snapshots
-      // console.log(planta.id, " => ", planta.data());
-      this.plantas.push(planta.data());
-    });
   },
 };
 </script>
