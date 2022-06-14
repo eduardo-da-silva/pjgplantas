@@ -5,8 +5,15 @@
       <b-col class="logo.login">Logo</b-col>
       <b-col></b-col>
       <b-col>
-        <b-form class="cform" @submit.prevent="login" @reset="onReset" v-if="show">
+        <b-form
+          class="cform"
+          @submit.prevent="login"
+          @reset="onReset"
+          v-if="show"
+        >
+        <span></span>
           <div class="dlogin">Login Cadastro</div>
+          <span></span>
           <b-form-group id="input-group-1" label="Email" label-for="input-1">
             <b-form-input
               id="input-1"
@@ -39,8 +46,8 @@ export default {
   data() {
     return {
       form: {
-        email: '',
-        password: '',
+        email: "",
+        password: "",
       },
       show: true,
     };
@@ -48,13 +55,13 @@ export default {
   methods: {
     login() {
       if (
-        this.form.email === 'admin@admin.com' &&
-        this.form.password === 'admin'
+        this.form.email === "admin@admin.com" &&
+        this.form.password === "admin"
       ) {
-        alert('ok');
-        this.$router.push('/');
+        alert("ok");
+        this.$router.push("/");
       } else {
-        alert('Email ou senha incorretos');
+        alert("Email ou senha incorretos");
       }
       // const provider = new GoogleAuthProvider();
       // const auth = getAuth();
@@ -84,8 +91,8 @@ export default {
   onReset(event) {
     event.preventDefault();
     // Reset our form values
-    this.form.email = '';
-    this.form.name = '';
+    this.form.email = "";
+    this.form.name = "";
     this.form.food = null;
     this.form.checked = [];
     // Trick to reset/clear native browser form validation state
@@ -109,16 +116,17 @@ export default {
 .cform {
   background-color: antiquewhite;
   border-radius: 5px;
-  margin-top: 250px;
-  margin-right: 300px;
   padding: 30px;
-  height: auto;
+  margin-top: 225px;
+  margin-right: 120px;
+  height: 350px auto 350px auto;
 }
 body {
   background-color: #3e9661;
   border-left: #0f3406;
   height: 100vh;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .dlogin {
@@ -129,7 +137,7 @@ body {
   border-color: #3e9661;
 }
 
-.btncad2{
+.btncad2 {
   margin-left: 20px;
   background-color: #3e9661;
   border-color: #3e9661;
@@ -144,7 +152,7 @@ body {
   transform: skew(20deg);
 }
 
-.logo.login{
+.logo.login {
   margin-top: 250px;
 }
 </style>

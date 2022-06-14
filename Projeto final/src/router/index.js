@@ -12,7 +12,7 @@ const routes = [
       {
         path: '',
         name: 'Home',
-        component: Home
+        component: Home.Vue
       },
       {
         path: '/plantas',

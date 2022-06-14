@@ -44,15 +44,14 @@
   </div>
 </template>
 <script>
-
 export default {
   name: "e",
   data() {
     return {
       plantas: [
-          {id: 1, nome: "Orquídea", valor: "R$50,00"},
-          {id: 2, nome: "Orquídea 2", valor: "R$150,00"},
-          {id: 3, nome: "Orquídea 3", valor: "R$250,00"},
+        { id: 1, nome: "Orquídea", valor: "R$50,00" },
+        { id: 2, nome: "Orquídea 2", valor: "R$150,00" },
+        { id: 3, nome: "Orquídea 3", valor: "R$250,00" },
       ],
     };
   },
