@@ -1,8 +1,9 @@
 <template>
   <b-container class="login-page" fluid>
     <b-row align-v="center">
-      <b-col class="logo.login"> 
-        PJG Plantas
+      <b-col class="log">
+        <h1 class="titulo">PJG</h1>
+        <h1 class="titulo">Plantas</h1>
       </b-col>
       <b-col></b-col>
       <b-col>
@@ -12,9 +13,7 @@
           @reset="onReset"
           v-if="show"
         >
-          <div class="dlogin">Login
-          Cadastro
-          </div>
+          <div class="dlogin">Login Cadastro</div>
           <b-form-group id="input-group-1" label="Email" label-for="input-1">
             <b-form-input
               id="input-1"
@@ -33,15 +32,6 @@
               placeholder="Digite sua senha"
               required
             ></b-form-input>
-            <b-form-checkbox
-              id="checkbox-1"
-              v-model="status"
-              name="checkbox-1"
-              value="accepted"
-              unchecked-value="not_accepted"
-            >
-              Aceitar termos de uso
-            </b-form-checkbox>
           </b-form-group>
           <b-button class="btncad" type="submit">Login</b-button>
           <b-button class="btncad2">Administrar</b-button>
@@ -117,47 +107,41 @@ export default {
 <style>
 .login-page {
   height: 100vh;
-  font-family:Jomolhari;
-}
-.blogin {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  font-family: Jomolhari;
 }
 .cform {
   background-color: white;
-  border-radius: 5px;
-  padding: 30px;
-  margin-top: 225px;
-  margin-right: 120px;
-  height: 350px auto 350px auto;
+  border-radius: 8px;
+  padding: 50px;
+  margin-top: 205px;
+  margin-right: 80px;
+  height: 500px;
   align-content: center;
 }
 body {
   background-color: #3e9661;
   border-left: #0f3406;
   height: 100vh;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
-#input-2{
+#input-2 {
   margin-right: 100px;
 }
 
 .dlogin {
   font-size: 2rem;
+  margin-top: 3px;
 }
 .btncad {
-  background-color: #72AE63;
-  border-color: #72AE63;
+  background-color: #72ae63;
+  border-color: #72ae63;
   padding: 9px;
 }
 
 .btncad2 {
   margin-left: 20px;
-  background-color: #72AE63;
-  border-color: #72AE63;
+  background-color: #72ae63;
+  border-color: #72ae63;
   padding: 9px;
 }
 #input-group-1 {
@@ -169,8 +153,11 @@ body {
   background: black;
   transform: skew(20deg);
 }
-
-.logo.login {
+.titulo {
+  color: aliceblue;
+  font-size: 3rem;
+}
+.log {
   margin-top: 150px;
 }
 </style>

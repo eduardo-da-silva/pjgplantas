@@ -27,11 +27,15 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <div class="LogoLay">
-      Logo
-      <hr class="hrlay" />
+    <div>
+      <b-img
+        src="https://picsum.photos/1024/400/?image=41"
+        fluid
+        alt="Responsive image"
+        class="imgpr"
+      ></b-img>
     </div>
-    <div class="titlepl">Plantas de Sombra</div>
+    <div class="titlepl">PLANTAS DE SOMBRA</div>
     <b-container class="bv-example-row">
       <b-row>
         <b-col>
@@ -102,7 +106,7 @@
         </b-col>
       </b-row>
     </b-container>
-    <div class="titlepl">Plantas de Sombra</div>
+    <div class="titlepl">PLANTAS DE SOMBRA</div>
     <b-container class="bv-example-row" id="container2">
       <b-row>
         <b-col>
@@ -220,19 +224,21 @@
 }
 .titlepl {
   margin-right: 900px;
-  padding: 20px;
-  font-size: 25px;
-  font-family: Jomolhari;
+  padding: 30px;
+  font-size: 20px;
   color: #3e9661;
 }
 .btn1 {
   background-color: #3e9661;
   opacity: 63%;
   border-color: #3e9661;
+  margin-right: 15px;
 }
 .navpr {
   background-color: #3e9661;
   opacity: 63%;
+  height: 60px;
+  margin-right: 15px;
 }
 .dprincipal {
   font-family: Jomolhari;
@@ -240,8 +246,14 @@
 #container2 {
   padding: 20px;
 }
-.dropp {
-  background-color: #3e9661;
-  opacity: 92%;
+
+.imgpr {
+  height: 60vh;
+  width: 1865px;
+}
+#footer {
+  height: 250px;
+  margin-top: 100px;
+  color: #3e9661;
 }
 </style>
