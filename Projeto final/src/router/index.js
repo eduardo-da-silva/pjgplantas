@@ -1,49 +1,50 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    component: () => import('@/layouts/Full.vue'),
+    path: "/",
+    component: () => import("@/layouts/Full.vue"),
     children: [
       {
-        path: '',
-        name: 'Home',
-        component: Home.Vue
+        path: "",
+        name: "Home",
+        component: Home,
       },
       {
-        path: '/plantas',
-        name: 'Plantas',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Plantas.vue')
+        path: "/plantas",
+        name: "Plantas",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Plantas.vue"),
       },
       {
-      path: '/perfil',
-        name: 'perfil',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Perfil.vue')
-      }
-    ]
+        path: "/perfil",
+        name: "perfil",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Perfil.vue"),
+      },
+    ],
   },
   {
-    path: '/',
-    component: () => import('@/layouts/Blank'),
+    path: "/",
+    component: () => import("@/layouts/Blank"),
     children: [
       {
-        path: '/login',
-        name: 'Login',
-        component: () => import('@/views/Login.vue')
+        path: "/login",
+        name: "Login",
+        component: () => import("@/views/Login.vue"),
       },
-    ]
-  }
-]
+    ],
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-
-export default router
+export default router;
