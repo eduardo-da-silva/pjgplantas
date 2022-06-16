@@ -13,24 +13,25 @@
           @reset="onReset"
           v-if="show"
         >
-          <div class="dlogin">Login Cadastro</div>
+          <div class="dlogin">
+            <span>Login</span><span>|</span><span>Cadastro</span>
+          </div>
           <b-form-group id="input-group-1" label="Email" label-for="input-1">
             <b-form-input
               id="input-1"
               v-model="form.email"
               type="email"
-              placeholder="Digite seu email"
               required
             >
             </b-form-input>
           </b-form-group>
-          <b-form-group id="input-group-2" label="Senha" label-for="input-2">
+          <b-form-group id="input-group-1" label="Senha" label-for="input-2">
             <b-form-input
-              id="input-2"
+              id="input-1"
               type="password"
               v-model="form.password"
-              placeholder="Digite sua senha"
               required
+              class="inputlog"
             ></b-form-input>
           </b-form-group>
           <b-button class="btncad" type="submit">Login</b-button>
@@ -108,44 +109,44 @@ export default {
 .login-page {
   height: 100vh;
   font-family: Jomolhari;
+  margin: 10px;
 }
 .cform {
   background-color: white;
   border-radius: 8px;
-  padding: 50px;
-  margin-top: 205px;
-  margin-right: 80px;
-  height: 500px;
+  padding: 60px;
+  margin-top: 110px;
+  margin-right: 230px;
+  height: 380px;
   align-content: center;
+}
+span {
+  padding: 0 10px;
 }
 body {
   background-color: #3e9661;
   border-left: #0f3406;
   height: 100vh;
 }
-
-#input-2 {
-  margin-right: 100px;
-}
-
 .dlogin {
-  font-size: 2rem;
-  margin-top: 3px;
+  font-size: 25px;
 }
 .btncad {
   background-color: #72ae63;
   border-color: #72ae63;
-  padding: 9px;
+  padding: 10px;
+  margin: 15px;
 }
 
 .btncad2 {
-  margin-left: 20px;
+  margin-left: 5px;
   background-color: #72ae63;
   border-color: #72ae63;
-  padding: 9px;
+  padding: 10px;
 }
 #input-group-1 {
   font-size: 1rem;
+  margin-right: 250px;
 }
 #div-diagonal {
   width: 2px;
@@ -158,6 +159,7 @@ body {
   font-size: 3rem;
 }
 .log {
-  margin-top: 150px;
+  margin-top: 120px;
+  margin-left: 150px;
 }
 </style>
