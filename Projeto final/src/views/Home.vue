@@ -159,3 +159,19 @@ export default {
   },
 };
 </script>
+
+<style>
+
+.btn1 {
+  background-color: #3e9661;
+  opacity: 63%;
+  border-color: #3e9661;
+  margin-right: 15px;
+}
+.imgpr {
+  height: 60vh;
+  width: 1965px;
+}
+
+
+</style>

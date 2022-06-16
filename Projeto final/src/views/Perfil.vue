@@ -1,85 +1,58 @@
 <template>
   <div>
-    <br />
-    <h2>Perfil</h2>
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-      <b-avatar variant="light"></b-avatar>
-      <b-form-group
-        id="input-group-1"
-        label="E-mail:"
-        label-for="input-1"
-        description="Nunca compartilharemos seu e-mail com ninguém."
-      >
-        <b-form-input
-          id="input1"
-          v-model="form.email"
-          type="email"
-          placeholder="insira seu e-mail"
-          required
-        ></b-form-input>
-      </b-form-group>
-
-      <b-form-group id="input-group-2" label="Nome:" label-for="input-1">
-        <b-form-input
-          id="input1"
-          v-model="form.name"
-          placeholder="Insira seu nome"
-          required
-        ></b-form-input>
-      </b-form-group>
-
-      <b-form-group id="input-group-3" label="Sobrenome:" label-for="input-3">
-        <b-form-input
-          id="input1"
-          v-model="form.surname"
-          placeholder="Insira seu sobrenome"
-          required
-        ></b-form-input>
-      </b-form-group>
-
-      <b-form-group id="input-group-4" label="Idade:" label-for="input-4">
-        <b-form-input
-          id="input1"
-          v-model="form.age"
-          placeholder="Insira sua idade"
-          required
-        ></b-form-input>
-      </b-form-group>
-
-      <b-form-group label="Selecione seu gênero:" v-slot="{ ariaDescribedby }">
-        <b-form-radio
-          v-model="selected"
-          :aria-describedby="ariaDescribedby"
-          name="some-radios"
-          value="A"
-          >Masculino</b-form-radio
+    <b-container class="login-page" fluid>
+    <b-row align-v="center">
+      <b-col></b-col>
+      <b-col>
+        <b-form
+          class="formp"
+          @submit.prevent="login"
+          @reset="onReset"
+          v-if="show"
         >
-        <b-form-radio
-          v-model="selected"
-          :aria-describedby="ariaDescribedby"
-          name="some-radios"
-          value="B"
-          >Feminino</b-form-radio
-        >
-
-        <br />
-        <div id="botao">
-          <b-button v-b-modal.modal-1 variant="info" @click="salvarPerfil"
-            >salvar</b-button
-          >
-          <b-button type="reset" variant="danger">Deletar</b-button>
-        </div>
-      </b-form-group>
-    </b-form>
-    <b-form-radio-group
-      id="radio-group-1"
-      v-model="selected"
-      :options="options"
-      :aria-describedby="ariaDescribedby"
-      name="radio-options"
-    >
-      <div class="mb-2"></div>
-    </b-form-radio-group>
+          <div class="dlogin">PERFIL</div>
+          <b-form-group id="input-group-2" label="Email" label-for="input-1">
+            <b-form-input
+              id="input-1"
+              v-model="form.email"
+              required
+            >
+            </b-form-input>
+          </b-form-group>
+          <b-form-group id="input-group-2" label="Nome" label-for="input-2">
+            <b-form-input
+              id="input-2"
+              type="name"
+              v-model="form.name"
+              required
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group id="input-group-2" label="Endereço" label-for="input-2">
+            <b-form-input
+              id="input-2"
+              v-model="form.endereco"
+              required
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group id="input-group-2" label="Data de Nascimento" label-for="input-2">
+            <b-form-input
+              id="input-2"
+              type="date"
+              v-model="form.date"
+              required
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group class="forms" label="Sexo" v-slot="{ ariaDescribedby }">
+            <b-form-radio id="opt1" v-model="selected" :aria-describedby="ariaDescribedby" name="some-radios" value="A">Option A</b-form-radio>
+            <b-form-radio id="opt2" v-model="selected" :aria-describedby="ariaDescribedby" name="some-radios" value="B">Option B</b-form-radio>
+          </b-form-group>
+          <b-button class="btncad" type="submit">Login</b-button>
+        </b-form>
+      </b-col>
+      <b-col>
+      </b-col>
+    </b-row>
+  </b-container>
   </div>
 </template>
 
@@ -91,9 +64,9 @@ export default {
       form: {
         email: "",
         name: "",
-        surname: "",
         selected: "",
-        age: "",
+        endereco: "",
+        date: "",
       },
       show: true,
     };
@@ -108,9 +81,9 @@ export default {
       // Reset our form values
       this.form.email = "";
       this.form.name = "";
-      this.form.surname = "";
-      this.form.age = "";
+      this.form.date = "";
       this.form.selected = " ";
+      this.form.endereco = "";
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {
@@ -122,22 +95,31 @@ export default {
 </script>
 
 <style>
-#botao {
-  background-color: "black";
-}
-h2 {
-  color: #17a2b8;
-  margin: 0px;
-}
 
-form {
-  background-color: white;
-  width: 700px;
-  margin: 40px auto 40px auto;
-  border-radius: 20px;
+.dlogin {
+  font-size: 2rem;
+  margin-top: 3px;
+  color: black;
 }
-#input1 {
-  width: 80%;
-  margin: 0 auto;
+.btncad {
+  background-color: whitesmoke;
+  border-color: #72ae63;
+  padding: 10px;
+  margin-top: 5px;
+  color: #3e9661;
+}
+.formp {
+  background-color:#3e9661;
+  border-radius: 8px;
+  padding: 60px;
+  margin-top: 70px;
+  margin-right: 80px;
+  height: 630px;
+  align-content: center;
+  opacity: 63%;
+}
+.forms{
+  margin-right:320px;
+  color: black;
 }
 </style>

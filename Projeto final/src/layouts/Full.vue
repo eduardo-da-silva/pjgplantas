@@ -88,8 +88,9 @@
 .navpr {
   background-color: #3e9661;
   opacity: 63%;
-  height: 60px;
+  height: 65px;
   margin-right: 15px;
+  width: 100%;
 }
 .dprincipal {
   font-family: Jomolhari;
@@ -100,7 +101,7 @@
 
 .imgpr {
   height: 60vh;
-  width: 1865px;
+  width: 100%;
 }
 #footer {
   height: 250px;
