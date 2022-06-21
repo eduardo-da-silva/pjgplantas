@@ -2,10 +2,8 @@
   <b-container class="login-page" fluid>
     <b-row align-v="center">
       <b-col class="log">
-        <h1 class="titulo">PJG</h1>
-        <h1 class="titulo">Plantas</h1>
+        <h1 class="titulo">PJG <br> Plantas</h1>
       </b-col>
-      <b-col></b-col>
       <b-col>
         <b-form
           class="cform"
@@ -16,26 +14,31 @@
           <div class="dlogin">
             <span>Login</span><span>|</span><span>Cadastro</span>
           </div>
-          <b-form-group id="input-group-1" label="Email" label-for="input-1">
+          <div class="emsen">
+            Email:
+          </div>
+          <b-form-group id="input-group-1" >
             <b-form-input
-              id="input-1"
               v-model="form.email"
               type="email"
               required
             >
             </b-form-input>
           </b-form-group>
-          <b-form-group id="input-group-1" label="Senha" label-for="input-2">
+          <div class="emsen">
+            Senha:
+          </div>
+          <b-form-group id="input-group-1">
             <b-form-input
-              id="input-1"
               type="password"
               v-model="form.password"
               required
-              class="inputlog"
             ></b-form-input>
           </b-form-group>
-          <b-button class="btncad" type="submit">Login</b-button>
+          <div class="buttons">
+          <b-button class="btncad" type="submit">Logar</b-button>
           <b-button class="btncad2">Administrar</b-button>
+          </div>
         </b-form>
       </b-col>
     </b-row>
@@ -106,6 +109,7 @@ export default {
 </script>
 
 <style>
+
 .login-page {
   height: 100vh;
   font-family: Jomolhari;
@@ -114,11 +118,11 @@ export default {
 .cform {
   background-color: white;
   border-radius: 8px;
-  padding: 60px;
-  margin-top: 110px;
-  margin-right: 230px;
-  height: 380px;
-  align-content: center;
+  padding: 50px;
+  margin-top: 180px;
+  margin-right: 330px;
+  height: 440px;
+  align-items: center;
 }
 span {
   padding: 0 10px;
@@ -134,20 +138,31 @@ body {
 .btncad {
   background-color: #72ae63;
   border-color: #72ae63;
-  padding: 10px;
+  padding: 7px;
   margin: 15px;
+  width: 120px;
+  font-size: 18px;
+  margin-top: 34px;
+}
+.emsen{
+  margin-right: 250px;
+  padding: 8px;
+  margin-top: 20px;
+}
+#input-group-1{
+  border-radius: 8px;
 }
 
 .btncad2 {
   margin-left: 5px;
   background-color: #72ae63;
   border-color: #72ae63;
-  padding: 10px;
+  padding: 7px;
+  width: 150px;
+  font-size: 18px;
+  margin-top: 19px;
 }
-#input-group-1 {
-  font-size: 1rem;
-  margin-right: 250px;
-}
+
 #div-diagonal {
   width: 2px;
   height: 200px;
@@ -155,11 +170,35 @@ body {
   transform: skew(20deg);
 }
 .titulo {
-  color: aliceblue;
-  font-size: 3rem;
+  color: whitesmoke;
+  font-size: 4rem;
 }
-.log {
-  margin-top: 120px;
-  margin-left: 150px;
-}
+
+
+
+
+@media (max-width: 844px) {
+  .cform{
+    width: 100%;
+    margin-top: 60px;
+    margin-right: 35px;
+    
+  }
+
+  .titulo{
+    margin-left: 61px;
+  }
+
+  .btncad{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .btncad2{
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ }
 </style>

@@ -11,11 +11,17 @@
             v-if="show"
           >
             <div class="dlogin">PERFIL</div>
-            <b-form-group id="input-group-2" label="Email" label-for="input-1">
+            <div class="divs">
+              Email:
+            </div>
+            <b-form-group id="input-group-2">
               <b-form-input id="input-2" v-model="form.email" required>
               </b-form-input>
             </b-form-group>
-            <b-form-group id="input-group-2" label="Nome" label-for="input-2">
+            <div class="divs">
+              Nome:
+            </div>
+            <b-form-group id="input-group-2">
               <b-form-input
                 id="input-2"
                 type="name"
@@ -23,22 +29,21 @@
                 required
               ></b-form-input>
             </b-form-group>
-            <b-form-group
-              id="input-group-2"
-              label="Endereço"
-              label-for="input-2"
-            >
+            <div class="divs">
+              Endereço:
+            </div>
+            <b-form-group id="input-group-2">
               <b-form-input
                 id="input-2"
                 v-model="form.endereco"
                 required
               ></b-form-input>
             </b-form-group>
+            <div class="divs">
+              Data de nascimento:
+            </div>
             <b-form-group
-              id="input-group-2"
-              label="Data de Nascimento"
-              label-for="input-2"
-            >
+              id="input-group-2">
               <b-form-input
                 id="input-2"
                 type="date"
@@ -46,9 +51,11 @@
                 required
               ></b-form-input>
             </b-form-group>
+            <div class="divs">
+              Email
+            </div>
             <b-form-group
               class="forms"
-              label="Sexo"
               v-slot="{ ariaDescribedby }"
             >
               <b-form-radio
@@ -68,7 +75,7 @@
                 >Masculino</b-form-radio
               >
             </b-form-group>
-            <b-button class="btncad" type="submit">Login</b-button>
+            <b-button class="btnp" type="submit">Salvar</b-button>
           </b-form>
         </b-col>
         <b-col> </b-col>
@@ -90,7 +97,7 @@ export default {
         date: "",
       },
       show: true,
-    };
+    }
   },
   methods: {
     onSubmit(event) {
@@ -118,17 +125,23 @@ export default {
 <style>
 .dlogin {
   font-size: 2rem;
-  margin-top: 0px;
   color: black;
   padding: 20px;
   align-content: center;
 }
-.btncad {
-  background-color: #72ae63;
-  border-color: whitesmoke;
+.divs{
+  margin-right: 520px;
+  color: black;
+}
+.btnp{
+  background-color: #3E9661;
+  border-color: #3E9661;
   padding: 10px;
   margin-top: 5px;
-  color: whitesmoke;
+  color: white;
+  width: 120px;
+  font-size: 18px;
+  opacity: 63%;
 }
 .formp {
   background-color: white;
@@ -136,21 +149,20 @@ export default {
   border-radius: 8px;
   padding: 60px;
   margin-top: 70px;
-  margin-right: 80px;
   height: 720px;
-  width: 100vh;
+  width: 75vh;
   align-content: center;
 }
 .forms {
   color: black;
-  margin-right: 420px;
+  margin-right: 480px;
 }
 #input-group-2 {
   margin-right: 420px;
   color: black;
 }
 #input-2 {
-  width: 80vh;
+  width: 60vh;
   background-color: whitesmoke;
 }
 </style>
