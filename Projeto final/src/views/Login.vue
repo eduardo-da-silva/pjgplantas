@@ -2,7 +2,10 @@
   <b-container class="login-page" fluid>
     <b-row align-v="center">
       <b-col class="log">
-        <h1 class="titulo">PJG <br> Plantas</h1>
+        <h1 class="titulo">
+          PJG <br />
+          Plantas
+        </h1>
       </b-col>
       <b-col>
         <b-form
@@ -14,20 +17,12 @@
           <div class="dlogin">
             <span>Login</span><span>|</span><span>Cadastro</span>
           </div>
-          <div class="emsen">
-            Email:
-          </div>
-          <b-form-group id="input-group-1" >
-            <b-form-input
-              v-model="form.email"
-              type="email"
-              required
-            >
+          <div class="emsen">Email:</div>
+          <b-form-group id="input-group-1">
+            <b-form-input v-model="form.email" type="email" required>
             </b-form-input>
           </b-form-group>
-          <div class="emsen">
-            Senha:
-          </div>
+          <div class="emsen">Senha:</div>
           <b-form-group id="input-group-1">
             <b-form-input
               type="password"
@@ -36,8 +31,8 @@
             ></b-form-input>
           </b-form-group>
           <div class="buttons">
-          <b-button class="btncad" type="submit">Logar</b-button>
-          <b-button class="btncad2">Administrar</b-button>
+            <b-button class="btncad" type="submit">Logar</b-button>
+            <b-button class="btncad2">Administrar</b-button>
           </div>
         </b-form>
       </b-col>
@@ -109,19 +104,22 @@ export default {
 </script>
 
 <style>
-
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 .login-page {
   height: 100vh;
   font-family: Jomolhari;
   margin: 10px;
 }
+.log col {
+  margin-right: 200px;
+}
 .cform {
   background-color: white;
   border-radius: 8px;
-  padding: 50px;
-  margin-top: 180px;
+  padding: 60px;
+  margin-top: 200px;
   margin-right: 330px;
-  height: 440px;
+  height: 500px;
   align-items: center;
 }
 span {
@@ -134,6 +132,7 @@ body {
 }
 .dlogin {
   font-size: 25px;
+  text-align: center;
 }
 .btncad {
   background-color: #72ae63;
@@ -143,14 +142,16 @@ body {
   width: 120px;
   font-size: 18px;
   margin-top: 34px;
+  align-items: center;
 }
-.emsen{
-  margin-right: 250px;
-  padding: 8px;
-  margin-top: 20px;
+.emsen {
+  padding: 10px;
+  margin-top: 25px;
+  text-align: left;
 }
-#input-group-1{
+#input-group-1 {
   border-radius: 8px;
+  background-color: burlywood;
 }
 
 .btncad2 {
@@ -160,7 +161,8 @@ body {
   padding: 7px;
   width: 150px;
   font-size: 18px;
-  margin-top: 19px;
+  margin-top: 22px;
+  ;
 }
 
 #div-diagonal {
@@ -170,35 +172,32 @@ body {
   transform: skew(20deg);
 }
 .titulo {
-  color: whitesmoke;
-  font-size: 4rem;
+  font-size: 60px;
+  font-family: "Jomolhari", serif;
+  margin-left: 250px;
+  margin-top: 80px;
+  color: rgb(255, 255, 255);
 }
 
-
-
-
 @media (max-width: 844px) {
-  .cform{
+  .cform {
     width: 100%;
     margin-top: 60px;
     margin-right: 35px;
-    
   }
 
-  .titulo{
+  .titulo {
     margin-left: 61px;
   }
 
-  .btncad{
+  .btncad {
     margin-top: 15px;
     align-items: center;
     justify-content: center;
   }
-  .btncad2{
+  .btncad2 {
     align-items: center;
     justify-content: center;
   }
-
-
- }
+}
 </style>

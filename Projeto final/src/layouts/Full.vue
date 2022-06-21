@@ -57,13 +57,11 @@
 }
 .btn1 {
   background-color: #3e9661;
-  opacity: 63%;
   border-color: #3e9661;
   margin-right: 15px;
 }
 .navpr {
   background-color: #3e9661;
-  opacity: 63%;
   height: 75px;
   width: 100%;
   font-size: 23px;
