@@ -1,11 +1,11 @@
 <template>
+  <body>
+    <hr class="hr1">
+    <hr class="hr2">
   <b-container class="login-page" fluid>
     <b-row align-v="center">
       <b-col class="log">
-        <h1 class="titulo">
-          PJG <br />
-          Plantas
-        </h1>
+        <h1 class="titulo">PJG <br> Plantas</h1>
       </b-col>
       <b-col>
         <b-form
@@ -17,27 +17,38 @@
           <div class="dlogin">
             <span>Login</span><span>|</span><span>Cadastro</span>
           </div>
-          <div class="emsen">Email:</div>
-          <b-form-group id="input-group-1">
-            <b-form-input v-model="form.email" type="email" required>
+          <div class="emsen">
+            Email:
+          </div>
+          <b-form-group id="input-group-1" >
+            <b-form-input
+              v-model="form.email"
+              type="email"
+              required
+              style="background: #E6E6E6; border-radius: 3px;"
+            >
             </b-form-input>
           </b-form-group>
-          <div class="emsen">Senha:</div>
+          <div class="emsen">
+            Senha:
+          </div>
           <b-form-group id="input-group-1">
             <b-form-input
               type="password"
               v-model="form.password"
               required
+              style="background: #E6E6E6; border-radius: 3px;"
             ></b-form-input>
           </b-form-group>
           <div class="buttons">
-            <b-button class="btncad" type="submit">Logar</b-button>
-            <b-button class="btncad2">Administrar</b-button>
+          <b-button class="btncad" type="submit">Logar</b-button>
+          <b-button class="btncad2">Administrar</b-button>
           </div>
         </b-form>
       </b-col>
     </b-row>
   </b-container>
+  </body>
 </template>
 
 <script>
@@ -104,23 +115,21 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+
 .login-page {
   height: 100vh;
   font-family: Jomolhari;
   margin: 10px;
 }
-.log col {
-  margin-right: 200px;
-}
 .cform {
   background-color: white;
   border-radius: 8px;
-  padding: 60px;
-  margin-top: 200px;
-  margin-right: 330px;
-  height: 500px;
+  padding: 55px;
+  margin-top: 180px;
+  margin-right: 360px;
+  height: 440px;
   align-items: center;
+  box-shadow: 0px 4px 10px 10px rgba(15, 52, 6, 0.42);
 }
 span {
   padding: 0 10px;
@@ -131,8 +140,9 @@ body {
   height: 100vh;
 }
 .dlogin {
-  font-size: 25px;
-  text-align: center;
+  font-size: 30px;
+  line-height: 29px;
+
 }
 .btncad {
   background-color: #72ae63;
@@ -142,18 +152,14 @@ body {
   width: 120px;
   font-size: 18px;
   margin-top: 34px;
-  align-items: center;
+  border-radius: 4px;
 }
-.emsen {
-  padding: 10px;
-  margin-top: 25px;
-  text-align: left;
+.emsen{
+  margin-right: 250px;
+  padding: 8px;
+  margin-top: 20px;
+  font-size: 20px;
 }
-#input-group-1 {
-  border-radius: 8px;
-  background-color: burlywood;
-}
-
 .btncad2 {
   margin-left: 5px;
   background-color: #72ae63;
@@ -161,8 +167,8 @@ body {
   padding: 7px;
   width: 150px;
   font-size: 18px;
-  margin-top: 22px;
-  ;
+  margin-top: 19px;
+  border-radius: 4px;
 }
 
 #div-diagonal {
@@ -172,32 +178,69 @@ body {
   transform: skew(20deg);
 }
 .titulo {
-  font-size: 60px;
-  font-family: "Jomolhari", serif;
-  margin-left: 250px;
-  margin-top: 80px;
-  color: rgb(255, 255, 255);
+  position: absolute;
+  color: #FFF7F7;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 70px;
+  mix-blend-mode: screen;
+  font-family: Jomolhari;
+}
+.log{
+  margin-left: 350px;
+}
+.buttons{
+  align-content: center;
+}
+.hr1{
+  position: absolute;
+  width: 2100.46px;
+  height: 0px;
+  border: 1px solid #000000;
+  transform: rotate(128.93deg);
+}
+.hr2{
+  position: absolute;
+  width: 306px;
+  height: 0px;
+  border: 1px solid #42C623;
+  transform: rotate(89.85deg);
+  size:5rem;
+}
+.hr4{
+  position: absolute;
+width: 326.17px;
+height: 0px;
+
+border: 1px solid #42C623;
+transform: rotate(-146.5deg);
 }
 
+
+
+
 @media (max-width: 844px) {
-  .cform {
+  .cform{
     width: 100%;
     margin-top: 60px;
     margin-right: 35px;
+    
   }
 
-  .titulo {
+  .titulo{
     margin-left: 61px;
   }
 
-  .btncad {
+  .btncad{
     margin-top: 15px;
     align-items: center;
     justify-content: center;
   }
-  .btncad2 {
+  .btncad2{
     align-items: center;
     justify-content: center;
   }
-}
+
+
+ }
 </style>
