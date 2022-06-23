@@ -5,7 +5,6 @@
       id="carousel-1"
       v-model="slide"
       :interval="4000"
-      controls
       background=""
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"

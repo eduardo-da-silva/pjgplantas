@@ -9,20 +9,20 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-navbar-nav class="navi">
+          <b-navbar-nav >
             <b-nav-item href="/">Home</b-nav-item>
           </b-navbar-nav>
-          <b-nav-item-dropdown class="" text="Produtos" right>
-            <b-dropdown-item href="#" class="drop">Plantas de Sombra</b-dropdown-item>
-            <b-dropdown-item href="#" class="drop" style="background: rgba(44, 117, 73, 0.85)">Plantas de Sombra</b-dropdown-item>
+          <b-nav-item-dropdown class="drop" text="Produtos" right>
+            <b-dropdown-item href="#" class="drop1">Plantas de Áreas Externas</b-dropdown-item>
+            <b-dropdown-item href="#" class="drop2">Plantas de Sombras </b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-navbar-nav class="navi">
-            <b-nav-item href="/perfil">Perfil</b-nav-item>
+          <b-navbar-nav>
+            <b-nav-item class="text-white" href="/perfil">Perfil</b-nav-item>
           </b-navbar-nav>
-          <b-navbar-nav class="navi">
+          <b-navbar-nav>
             <b-nav-item href="#">Carrinho</b-nav-item>
           </b-navbar-nav>
-          <b-navbar-nav class="navi">
+          <b-navbar-nav>
             <b-nav-item href="/login">Sair</b-nav-item>
           </b-navbar-nav>
         </b-navbar-nav>
@@ -64,7 +64,7 @@
   width: 100%;
   font-size: 23px;
   padding: 30px;
-  background: rgba(62, 150, 97, 0.58);
+  background: white;
   box-shadow: 5px 8px 10px 5px rgba(62, 150, 97, 0.79);
 }
 .dprincipal {
@@ -74,33 +74,43 @@
   padding: 20px;
 }
 #footer {
-  height: 225px;
-  margin-top: 100px;
+  height: 205px;
+  margin-top: 90px;
   color: #3e9661;
-  font-size: 27px;
-  display: flex;
+  font-size: 25px;
 }
 .footer1{
   margin-right: 10px;
 }
 #navb{
   font-size: 23px;
-  color: white;
+  color:#3e9661;
   font-weight: bold;
-}
-.navi{
-  margin-right: 10px;
 }
 .footer2{
   margin-left: 250px;
 }
-.drop{
+.drop1 {
   background: rgba(62, 150, 97, 0.92);
   color: rgba(255, 255, 255, 0.95);
-  border: solid;
-  padding: 0;
+}
+.drop2{
+  background: rgba(62, 150, 97, 0.92);
+  color: rgba(255, 255, 255, 0.95);
 }
 .dropdown-menu{
   background: rgba(62, 150, 97, 0.92);
+  border-radius: 3px;
 }
+.navbar-nav {
+  margin-right: 5px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color:#84cca1;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:#3e9661;
+}
+
 </style>
