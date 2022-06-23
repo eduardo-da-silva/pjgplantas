@@ -42,7 +42,7 @@
             <b-card-text class="textop">
               R$42,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -63,7 +63,7 @@
             <b-card-text class="textop">
               R$47,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -84,7 +84,7 @@
             <b-card-text class="textop">
               R$37,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -105,7 +105,7 @@
             <b-card-text class="textop">
               R$75,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -131,7 +131,7 @@
             <b-card-text class="textop">
               R$45,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -152,7 +152,7 @@
             <b-card-text class="textop">
               R$45,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -173,7 +173,7 @@
             <b-card-text class="textop">
               R$75,00 à vista.
             </b-card-text>
-            <b-button class="btn1" href="#" variant="primary"
+            <b-button class="btn1" href="/produto" variant="primary" style="white-space: nowrap"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -214,19 +214,24 @@ export default {
 <style>
 
 .btn1 {
-  background-color: #3e9661;
-  opacity: 63%;
-  border-color: #3e9661;
-  margin-right: 15px;
+  background: rgba(62, 150, 97, 0.63);
+  border-radius: 5px;
+  margin-left: 24px;
+  border: 0;
+  margin-top: 20px;
 }
+
 .imgpr{
   width: 100%;
 }
 .card-img-top{
   height: 300px;
+  border-radius: 3px;
 }
 .titlep{
   text-align: left;
+  box-shadow: 5px 5px 8px 2px rgba(62, 150, 97, 0.95);
+  border-radius: 5px;
 }
 .card-text {
   font-family: 'Jomolhari', serif;
@@ -238,15 +243,17 @@ export default {
   color: #3e9661;
   margin-top: 85px;
   padding: 30px;
-  opacity: 95%;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .titlepl2 {
   margin-left: 400px;
   font-size: 29px;
   color: #3e9661;
-  opacity: 95%;
   margin-top: 55px;
+  font-style: normal;
+  font-weight: 400;
 }
 .titulo {
   color: #3e9661;
@@ -255,6 +262,7 @@ export default {
   text-align: left;
   font-size: 21px;
   font-weight: bold;
+  white-space: nowrap
 }
 .hrH{
   border-color: black;
@@ -264,5 +272,8 @@ export default {
 }
 #c2{
   height: 690px;
+}
+.textop{
+  margin-top: 10px;
 }
 </style>

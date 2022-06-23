@@ -5,7 +5,7 @@
         <b-col></b-col>
         <b-col>
           <b-form
-            class="formp border border-success"
+            class="formp"
             @submit.prevent="login"
             @reset="onReset"
             v-if="show"
@@ -52,7 +52,7 @@
               ></b-form-input>
             </b-form-group>
             <div class="divs">
-              Email
+              Sexo:
             </div>
             <b-form-group
               class="forms"
@@ -127,26 +127,30 @@ export default {
   font-size: 2rem;
   color: black;
   padding: 20px;
-  align-content: center;
+  text-align: center;
 }
 .divs{
   margin-right: 520px;
   color: black;
+  font-style: normal;
+  font-weight: 500;
+  white-space: nowrap
 }
 .btnp{
-  background-color: #3E9661;
-  border-color: #3E9661;
+  background: rgba(62, 150, 97, 0.63);
+  border-radius: 3px;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   color: white;
   width: 120px;
   font-size: 18px;
-  opacity: 63%;
+  border: 0;
+  margin-left: 220px;
 }
 .formp {
-  background-color: white;
-  border-color: #3e9661;
-  border-radius: 8px;
+  background: rgba(254, 254, 254, 0.63);
+  box-shadow: 5px 8px 10px 5px rgba(62, 150, 97, 0.79);
+  border-radius: 10px;
   padding: 60px;
   margin-top: 70px;
   height: 720px;
@@ -156,6 +160,8 @@ export default {
 .forms {
   color: black;
   margin-right: 480px;
+  display: flex;
+  padding: 5px;
 }
 #input-group-2 {
   margin-right: 420px;
@@ -163,6 +169,7 @@ export default {
 }
 #input-2 {
   width: 60vh;
-  background-color: whitesmoke;
+  background: #E6E6E6;
+  border-radius: 3px; 
 }
 </style>

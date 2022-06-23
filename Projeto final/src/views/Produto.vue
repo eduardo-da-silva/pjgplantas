@@ -1,9 +1,9 @@
 <template>
     <b-container fluid class="produto">
         <b-row class="row">
-            <b-col class="col1 border border-light">
+            <b-col class="col1">
                 <img src="https://img.freepik.com/psd-gratuitas/sombra-de-folhas-de-palmeira-na-parede_53876-84542.jpg?t=st=1655673278~exp=1655673878~hmac=f8b41a2447ba456492405f6e40ac1e574cceb38c893f2629b627779e06b3a654&w=826" alt="" 
-                    height="830px"
+                    height="840px"
                     width=100%>
             </b-col>
             <b-col class="col2 border border-light">
@@ -30,11 +30,15 @@
 </template>
 
 <style>
-
+.row{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
 .produto{
-    padding: 20px;
+    padding: 30px;
     margin-top: 15px;
     font-family: 'Jomolhari', serif;
+    height: 100vh;
 }
 .col1{
     border-radius: 4px;
@@ -42,11 +46,13 @@
     border-right-color: aliceblue;
     padding: 1px;
     margin-left: 5px;
+    box-shadow: 5px 8px 7px 6px rgba(15, 52, 6, 0.85);
 }
 .col2{
     text-align: center;
     border-radius: 4px;
-    border-left-color: aliceblue;
+    box-shadow: 5px 8px 7px 6px rgba(15, 52, 6, 0.85);
+
 }
 
 .nome {
@@ -81,5 +87,8 @@
     background-color:#3E9661;
     border-color: #3E9661;
     font-size: 25px;
+}
+.img{
+    filter: drop-shadow(0px 5px 10px rgba(15, 52, 6, 0.42));
 }
 </style>
