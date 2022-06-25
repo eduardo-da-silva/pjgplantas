@@ -1,27 +1,28 @@
 <template>
   <section>
     <div>
-    <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      background=""
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-      fade
-    >
-      <b-carousel-slide
-        id="c1"
-        img-src="https://img.freepik.com/fotos-gratis/fundo-de-folhas-verdes-tropicais_53876-88891.jpg?t=st=1655655273~exp=1655655873~hmac=130a104d203ac8ab45624aaaa9f7d5fb5dea77ef494644a3636d38a0f738fc3a&w=1380"
+      <b-carousel
+        id="carousel-1"
+        v-model="slide"
+        :interval="4000"
+        background=""
+        style="text-shadow: 1px 1px 2px #333"
+        @sliding-start="onSlideStart"
+        @sliding-end="onSlideEnd"
+        fade
       >
-      </b-carousel-slide>
-      <b-carousel-slide 
-        id="c2"
-        img-src="https://img.freepik.com/fotos-gratis/foto-detalhada-de-uma-bela-folha-de-samambaia-iluminada-por-raios-de-sol-raios-de-sol-de-primavera-brilham-atraves-das-folhas-verdes-de-samambaias-nas-profundezas-de-uma-pitoresca-floresta-de-pinheiros-nas-montanhas_661209-107.jpg?t=st=1655656374~exp=1655656974~hmac=1dfe80525fb4a93927ca945d17d6590923c797d847a3623393ae8bdb99fc28d1&w=1380">
-      </b-carousel-slide>
-    </b-carousel>
-  </div>
+        <b-carousel-slide
+          id="c1"
+          img-src="https://img.freepik.com/fotos-gratis/fundo-de-folhas-verdes-tropicais_53876-88891.jpg?t=st=1655655273~exp=1655655873~hmac=130a104d203ac8ab45624aaaa9f7d5fb5dea77ef494644a3636d38a0f738fc3a&w=1380"
+        >
+        </b-carousel-slide>
+        <b-carousel-slide
+          id="c2"
+          img-src="https://img.freepik.com/fotos-gratis/foto-detalhada-de-uma-bela-folha-de-samambaia-iluminada-por-raios-de-sol-raios-de-sol-de-primavera-brilham-atraves-das-folhas-verdes-de-samambaias-nas-profundezas-de-uma-pitoresca-floresta-de-pinheiros-nas-montanhas_661209-107.jpg?t=st=1655656374~exp=1655656974~hmac=1dfe80525fb4a93927ca945d17d6590923c797d847a3623393ae8bdb99fc28d1&w=1380"
+        >
+        </b-carousel-slide>
+      </b-carousel>
+    </div>
     <div class="titlepl">PLANTAS DE AMBIENTES EXTERNOS</div>
     <b-container class="bv-example-row">
       <b-row>
@@ -31,16 +32,13 @@
             img-alt="Image"
             img-top
             tag="article"
-            style="height: 550px;"
+            style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Areca Bambu
-          </div>
-            <b-card-text class="textop">
-              R$42,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" scale="1" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Areca Bambu</div>
+            <b-card-text class="textop"> R$42,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -53,15 +51,12 @@
             img-top
             tag="article"
             style="height: 550px"
-            class="titlep mb-2 border-border-success"
+            class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Antúrio
-          </div>
-            <b-card-text class="textop">
-              R$47,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Antúrio</div>
+            <b-card-text class="textop"> R$47,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -76,13 +71,10 @@
             style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Moreia
-          </div>
-            <b-card-text class="textop">
-              R$37,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Moreia</div>
+            <b-card-text class="textop"> R$37,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -97,13 +89,10 @@
             style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Pata de Elefante
-          </div>
-            <b-card-text class="textop">
-              R$75,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Pata de Elefante</div>
+            <b-card-text class="textop"> R$75,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -120,16 +109,13 @@
             img-alt="Image"
             img-top
             tag="article"
-            style="height: 550px;"
+            style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Espada de São Jorge
-          </div>
-            <b-card-text class="textop">
-              R$45,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Espada de São Jorge</div>
+            <b-card-text class="textop"> R$45,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -141,16 +127,13 @@
             img-alt="Image"
             img-top
             tag="article"
-            style="height: 550px;"
+            style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Espada de São Jorge
-          </div>
-            <b-card-text class="textop">
-              R$45,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Espada de São Jorge</div>
+            <b-card-text class="textop"> R$45,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -165,14 +148,15 @@
             style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Palmeira-ráfis
-          </div>
-            <b-card-text class="textop">
-              R$75,00 à vista.
-            </b-card-text>
-            <b-button class="btn1" href="/produto" variant="primary" style="white-space: nowrap"
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Palmeira-ráfis</div>
+            <b-card-text class="textop"> R$75,00 à vista. </b-card-text>
+            <b-button
+              class="btn1"
+              href="/produto"
+              variant="primary"
+              style="white-space: nowrap"
               >Adicionar ao Carrinho</b-button
             >
           </b-card>
@@ -183,16 +167,13 @@
             img-alt="Image"
             img-top
             tag="article"
-            style="height: 550px;"
+            style="height: 550px"
             class="titlep mb-2"
           >
-          <hr class="hrH">
-          <div class="titulo">
-            Pacová
-          </div>
-            <b-card-text class="textop">
-              R$30,00 à vista.
-            </b-card-text>
+            <b-icon icon="heart" variant="danger"></b-icon>
+            <hr class="hrH" />
+            <div class="titulo">Pacová</div>
+            <b-card-text class="textop"> R$30,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
             >
@@ -211,7 +192,6 @@ export default {
 </script>
 
 <style>
-
 .btn1 {
   background: rgba(62, 150, 97, 0.63);
   border-radius: 5px;
@@ -220,23 +200,23 @@ export default {
   margin-top: 20px;
 }
 
-.imgpr{
+.imgpr {
   width: 100%;
 }
-.card-img-top{
+.card-img-top {
   height: 300px;
   border-radius: 3px;
 }
-.titlep{
+.titlep {
   text-align: left;
   box-shadow: 5px 5px 8px 2px rgba(62, 150, 97, 0.95);
   border-radius: 5px;
 }
 .card-text {
-  font-family: 'Jomolhari', serif;
+  font-family: "Jomolhari", serif;
   font-size: 22px;
 }
-.titlepl{
+.titlepl {
   margin-left: 360px;
   font-size: 29px;
   color: #3e9661;
@@ -257,22 +237,22 @@ export default {
 .titulo {
   color: #3e9661;
   opacity: 63%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: left;
   font-size: 21px;
   font-weight: bold;
-  white-space: nowrap
+  white-space: nowrap;
 }
-.hrH{
+.hrH {
   border-color: black;
 }
-#c1{
+#c1 {
   height: 690px;
 }
-#c2{
+#c2 {
   height: 690px;
 }
-.textop{
+.textop {
   margin-top: 10px;
 }
 </style>

@@ -1,53 +1,52 @@
 <template>
   <body>
-    <hr class="hr1">
-    <hr class="hr2">
-  <b-container class="login-page" fluid>
-    <b-row align-v="center">
-      <b-col class="log">
-        <h1 class="titulo">PJG <br> Plantas</h1>
-      </b-col>
-      <b-col>
-        <b-form
-          class="cform"
-          @submit.prevent="login"
-          @reset="onReset"
-          v-if="show"
-        >
-          <div class="dlogin">
-            <span>Login</span><span>|</span><span>Cadastro</span>
-          </div>
-          <div class="emsen">
-            Email:
-          </div>
-          <b-form-group id="input-group-1" >
-            <b-form-input
-              v-model="form.email"
-              type="email"
-              required
-              style="background: #E6E6E6; border-radius: 3px;"
-            >
-            </b-form-input>
-          </b-form-group>
-          <div class="emsen">
-            Senha:
-          </div>
-          <b-form-group id="input-group-1">
-            <b-form-input
-              type="password"
-              v-model="form.password"
-              required
-              style="background: #E6E6E6; border-radius: 3px;"
-            ></b-form-input>
-          </b-form-group>
-          <div class="buttons">
-          <b-button class="btncad" type="submit">Logar</b-button>
-          <b-button class="btncad2">Administrar</b-button>
-          </div>
-        </b-form>
-      </b-col>
-    </b-row>
-  </b-container>
+    <hr class="hr1" />
+    <hr class="hr2" />
+    <b-container class="login-page" fluid>
+      <b-row align-v="center">
+        <b-col class="log">
+          <h1 class="titulo">
+            PJG <br />
+            Plantas
+          </h1>
+        </b-col>
+        <b-col>
+          <b-form
+            class="cform"
+            @submit.prevent="login"
+            @reset="onReset"
+            v-if="show"
+          >
+            <div class="dlogin">
+              <span>Login</span><span>|</span><span>Cadastro</span>
+            </div>
+            <div class="emsen">Email:</div>
+            <b-form-group id="input-group-1">
+              <b-form-input
+                v-model="form.email"
+                type="email"
+                required
+                style="background: #e6e6e6; border-radius: 3px"
+              >
+              </b-form-input>
+            </b-form-group>
+            <div class="emsen">Senha:</div>
+            <b-form-group id="input-group-1">
+              <b-form-input
+                type="password"
+                v-model="form.password"
+                required
+                style="background: #e6e6e6; border-radius: 3px"
+              ></b-form-input>
+            </b-form-group>
+            <div class="buttons">
+              <b-button class="btncad" type="submit">Logar</b-button>
+              <b-button class="btncad2">Administrar</b-button>
+            </div>
+          </b-form>
+        </b-col>
+      </b-row>
+    </b-container>
   </body>
 </template>
 
@@ -115,7 +114,6 @@ export default {
 </script>
 
 <style>
-
 .login-page {
   height: 100vh;
   font-family: Jomolhari;
@@ -137,12 +135,10 @@ span {
 body {
   background-color: #3e9661;
   border-left: #0f3406;
-  height: 100vh;
 }
 .dlogin {
   font-size: 30px;
   line-height: 29px;
-
 }
 .btncad {
   background-color: #72ae63;
@@ -154,7 +150,7 @@ body {
   margin-top: 34px;
   border-radius: 4px;
 }
-.emsen{
+.emsen {
   margin-right: 250px;
   padding: 8px;
   margin-top: 20px;
@@ -179,68 +175,62 @@ body {
 }
 .titulo {
   position: absolute;
-  color: #FFF7F7;
+  color: #fff7f7;
   font-size: 80px;
   font-weight: 500;
   line-height: 70px;
   mix-blend-mode: screen;
   font-family: Jomolhari;
 }
-.log{
+.log {
   margin-left: 350px;
 }
-.buttons{
+.buttons {
   align-content: center;
 }
-.hr1{
+.hr1 {
   position: absolute;
   width: 2100.46px;
   height: 0px;
   border: 1px solid #000000;
   transform: rotate(128.93deg);
 }
-.hr2{
+.hr2 {
   position: absolute;
   width: 306px;
   height: 0px;
-  border: 1px solid #42C623;
+  border: 1px solid #42c623;
   transform: rotate(89.85deg);
-  size:5rem;
+  size: 5rem;
 }
-.hr4{
+.hr4 {
   position: absolute;
-width: 326.17px;
-height: 0px;
+  width: 326.17px;
+  height: 0px;
 
-border: 1px solid #42C623;
-transform: rotate(-146.5deg);
+  border: 1px solid #42c623;
+  transform: rotate(-146.5deg);
 }
-
-
-
 
 @media (max-width: 844px) {
-  .cform{
+  .cform {
     width: 100%;
     margin-top: 60px;
     margin-right: 35px;
-    
   }
 
-  .titulo{
+  .titulo {
     margin-left: 61px;
   }
 
-  .btncad{
+  .btncad {
     margin-top: 15px;
     align-items: center;
     justify-content: center;
   }
-  .btncad2{
+  .btncad2 {
     align-items: center;
     justify-content: center;
   }
-
-
- }
+}
 </style>
