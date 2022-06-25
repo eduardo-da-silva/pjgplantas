@@ -18,15 +18,20 @@
             v-if="show"
           >
             <div class="dlogin">
-              <span>Login</span><span>|</span><span>Cadastro</span>
+              <a href="/login"> Login</a> <span>|</span>
+              <a href="/cadastro">Cadastro</a>
             </div>
             <div class="emsen">Email:</div>
             <b-form-group id="input-group-1">
               <b-form-input
                 v-model="form.email"
                 type="email"
-                required
-                style="background: #e6e6e6; border-radius: 3px"
+                style="
+                  background: white;
+                  border-style: none none solid none;
+                  border-color: rgba(62, 150, 97, 0.95);
+                "
+                placeholder="Insira seu email"
               >
               </b-form-input>
             </b-form-group>
@@ -36,7 +41,12 @@
                 type="password"
                 v-model="form.password"
                 required
-                style="background: #e6e6e6; border-radius: 3px"
+                style="
+                  background: white;
+                  border-style: none none solid none;
+                  border-color: rgba(62, 150, 97, 0.95);
+                "
+                placeholder="Insira sua senha"
               ></b-form-input>
             </b-form-group>
             <div class="buttons">
@@ -139,16 +149,30 @@ body {
 .dlogin {
   font-size: 30px;
   line-height: 29px;
+  text-align: center;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #3e9661;
+  text-decoration: none;
+  background-color: transparent;
 }
 .btncad {
-  background-color: #72ae63;
-  border-color: #72ae63;
+  background-color: #3e9661;
+  border: 0;
   padding: 7px;
   margin: 15px;
   width: 120px;
   font-size: 18px;
   margin-top: 34px;
   border-radius: 4px;
+}
+.btncad:hover {
+  background-color: #3e9661;
 }
 .emsen {
   margin-right: 250px;
@@ -158,13 +182,16 @@ body {
 }
 .btncad2 {
   margin-left: 5px;
-  background-color: #72ae63;
-  border-color: #72ae63;
+  background: rgba(62, 150, 97, 0.95);
+  border: 0;
   padding: 7px;
   width: 150px;
   font-size: 18px;
   margin-top: 19px;
   border-radius: 4px;
+}
+.btncad2:hover {
+  background-color: #3e9661;
 }
 
 #div-diagonal {

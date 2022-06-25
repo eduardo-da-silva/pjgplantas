@@ -11,16 +11,12 @@
             v-if="show"
           >
             <div class="dlogin">PERFIL</div>
-            <div class="divs">
-              Email:
-            </div>
+            <div class="divs">Email:</div>
             <b-form-group id="input-group-2">
               <b-form-input id="input-2" v-model="form.email" required>
               </b-form-input>
             </b-form-group>
-            <div class="divs">
-              Nome:
-            </div>
+            <div class="divs">Nome:</div>
             <b-form-group id="input-group-2">
               <b-form-input
                 id="input-2"
@@ -29,9 +25,7 @@
                 required
               ></b-form-input>
             </b-form-group>
-            <div class="divs">
-              Endereço:
-            </div>
+            <div class="divs">Endereço:</div>
             <b-form-group id="input-group-2">
               <b-form-input
                 id="input-2"
@@ -39,11 +33,8 @@
                 required
               ></b-form-input>
             </b-form-group>
-            <div class="divs">
-              Data de nascimento:
-            </div>
-            <b-form-group
-              id="input-group-2">
+            <div class="divs">Data de nascimento:</div>
+            <b-form-group id="input-group-2">
               <b-form-input
                 id="input-2"
                 type="date"
@@ -51,13 +42,8 @@
                 required
               ></b-form-input>
             </b-form-group>
-            <div class="divs">
-              Sexo:
-            </div>
-            <b-form-group
-              class="forms"
-              v-slot="{ ariaDescribedby }"
-            >
+            <div class="divs">Sexo:</div>
+            <b-form-group class="forms" v-slot="{ ariaDescribedby }">
               <b-form-radio
                 id="opt1"
                 v-model="selected"
@@ -75,7 +61,7 @@
                 >Masculino</b-form-radio
               >
             </b-form-group>
-            <b-button class="btnp" type="submit">Salvar</b-button>
+            <b-button href="/" class="btnp" type="submit">Salvar</b-button>
           </b-form>
         </b-col>
         <b-col> </b-col>
@@ -97,7 +83,7 @@ export default {
         date: "",
       },
       show: true,
-    }
+    };
   },
   methods: {
     onSubmit(event) {
@@ -129,14 +115,14 @@ export default {
   padding: 20px;
   text-align: center;
 }
-.divs{
+.divs {
   margin-right: 520px;
   color: black;
   font-style: normal;
   font-weight: 500;
-  white-space: nowrap
+  white-space: nowrap;
 }
-.btnp{
+.btnp {
   background: rgba(62, 150, 97, 0.63);
   border-radius: 3px;
   padding: 10px;
@@ -147,29 +133,20 @@ export default {
   border: 0;
   margin-left: 220px;
 }
+.btnp:hover {
+  background: #43b973;
+}
 .formp {
-  background: rgba(254, 254, 254, 0.63);
   box-shadow: 5px 8px 10px 5px rgba(62, 150, 97, 0.79);
   border-radius: 10px;
   padding: 60px;
   margin-top: 70px;
   height: 720px;
   width: 75vh;
-  align-content: center;
 }
-.forms {
-  color: black;
-  margin-right: 480px;
-  display: flex;
-  padding: 5px;
-}
-#input-group-2 {
-  margin-right: 420px;
-  color: black;
-}
-#input-2 {
-  width: 60vh;
-  background: #E6E6E6;
-  border-radius: 3px; 
+.form-control {
+  background: white;
+  border-style: none none solid none;
+  border-color: rgba(62, 150, 97, 0.95);
 }
 </style>

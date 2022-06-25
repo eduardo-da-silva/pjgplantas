@@ -37,7 +37,7 @@
           >
             <b-icon icon="heart" scale="1" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Areca Bambu</div>
+            <div class="titulo5">Areca Bambu</div>
             <b-card-text class="textop"> R$42,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -55,7 +55,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Antúrio</div>
+            <div class="titulo5">Antúrio</div>
             <b-card-text class="textop"> R$47,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -73,7 +73,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Moreia</div>
+            <div class="titulo5">Moreia</div>
             <b-card-text class="textop"> R$37,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -91,7 +91,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Pata de Elefante</div>
+            <div class="titulo5">Pata de Elefante</div>
             <b-card-text class="textop"> R$75,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -114,7 +114,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Espada de São Jorge</div>
+            <div class="titulo5">Espada de São Jorge</div>
             <b-card-text class="textop"> R$45,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -132,7 +132,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Espada de São Jorge</div>
+            <div class="titulo5">Espada de São Jorge</div>
             <b-card-text class="textop"> R$45,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -150,7 +150,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Palmeira-ráfis</div>
+            <div class="titulo5">Palmeira-ráfis</div>
             <b-card-text class="textop"> R$75,00 à vista. </b-card-text>
             <b-button
               class="btn1"
@@ -172,7 +172,7 @@
           >
             <b-icon icon="heart" variant="danger"></b-icon>
             <hr class="hrH" />
-            <div class="titulo">Pacová</div>
+            <div class="titulo5">Pacová</div>
             <b-card-text class="textop"> R$30,00 à vista. </b-card-text>
             <b-button class="btn1" href="/produto" variant="primary"
               >Adicionar ao Carrinho</b-button
@@ -234,7 +234,7 @@ export default {
   font-style: normal;
   font-weight: 400;
 }
-.titulo {
+.titulo5 {
   color: #3e9661;
   opacity: 63%;
   font-family: "Josefin Sans", sans-serif;
