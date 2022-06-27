@@ -102,14 +102,26 @@ export default {
 }
 .btncad {
   padding: 15px;
-  background-color: #3e9661;
-  border-color: #3e9661;
-  font-size: 25px;
-  margin: 0 0 0 45%;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Jomolhari";
+  color: #fff;
+  background: #ff691e;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 0;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 8% 0 0 45%;
 }
 .btncad:hover {
-  background-color: #43b973;
-  border: 0;
+  background: #ff691e;
+  opacity: 80%;
   color: white;
 }
 .img {

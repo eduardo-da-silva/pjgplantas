@@ -66,14 +66,14 @@
         <div>
           <b-form-input
             v-model="text"
-            placeholder="Enter your name"
+            placeholder="Digite o numero do cartão"
           ></b-form-input>
         </div>
         <div>CVV</div>
         <div>
           <b-form-input
             v-model="text"
-            placeholder="Enter your name"
+            placeholder="Digite o CVV"
           ></b-form-input>
         </div>
         <div>Validade</div>
@@ -144,12 +144,13 @@ export default {
   padding: 5px;
   text-align: center;
   margin: 30px;
+  text-transform: uppercase;
 }
 .subtitle {
   font-family: "Jomolhari";
   font-style: normal;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 32px;
   padding: 20px;
 }
@@ -170,7 +171,6 @@ export default {
   color: black;
   border-radius: 3px;
   font-family: "Jomolhari";
-  font-size: 15px;
   line-height: 19px;
 }
 .dropdown-item:hover {
@@ -182,7 +182,11 @@ export default {
   border-style: none none solid none;
   border-color: rgba(62, 150, 97, 0.95);
   margin: 5px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
 }
+
 .col2 {
   margin-left: 200px;
 }
@@ -191,17 +195,28 @@ export default {
   margin: 0px 10px 10px 0px;
 }
 .button {
-  margin: 8% 0 0 40%;
-  padding: 10px;
-  width: 180px;
-  color: white;
+  padding: 15px;
+  border: 0;
   border-radius: 6px;
-  border-color: #62a77d;
-  background-color: #62a77d;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Jomolhari";
+  color: #fff;
+  background: #ff691e;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 0;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  font-size: 1.125rem;
+  margin: 8% 0 0 45%;
+  width: 150px;
 }
 .button:hover {
-  background-color: rgba(62, 150, 97, 0.95);
+  background: #ff691e;
+  opacity: 80%;
   color: white;
-  border-color: rgba(62, 150, 97, 0.95);
 }
 </style>

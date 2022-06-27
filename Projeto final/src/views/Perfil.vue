@@ -116,37 +116,40 @@ export default {
   text-align: center;
 }
 .divs {
-  margin-right: 520px;
   color: black;
   font-style: normal;
   font-weight: 500;
   white-space: nowrap;
+  font-size: 19px;
 }
 .btnp {
-  background: rgba(62, 150, 97, 0.63);
-  border-radius: 3px;
+  background-color: blue;
+  border-radius: 6px;
   padding: 10px;
-  margin-top: 10px;
   color: white;
-  width: 120px;
-  font-size: 18px;
+  width: 130px;
+  font-size: 22px;
   border: 0;
-  margin-left: 220px;
+  margin: 10% 0 0 40%;
 }
 .btnp:hover {
-  background: #43b973;
+  background: rgba(25, 57, 124, 0.63);
+  opacity: 90%;
 }
 .formp {
   box-shadow: 5px 8px 10px 5px rgba(62, 150, 97, 0.79);
   border-radius: 10px;
-  padding: 60px;
-  margin-top: 70px;
+  padding: 70px;
   height: 720px;
   width: 75vh;
+  margin: 10% 0 10% 0;
 }
 .form-control {
   background: white;
   border-style: none none solid none;
   border-color: rgba(62, 150, 97, 0.95);
+}
+.forms {
+  margin: 2% 0 2% 0;
 }
 </style>

@@ -234,7 +234,6 @@ a:hover {
   position: absolute;
   width: 326.17px;
   height: 0px;
-
   border: 1px solid #42c623;
   transform: rotate(-146.5deg);
 }

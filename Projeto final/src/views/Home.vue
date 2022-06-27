@@ -192,12 +192,16 @@ export default {
 </script>
 
 <style>
-.btn1 {
-  background: rgba(62, 150, 97, 0.63);
+a.btn.btn1.btn-primary {
+  background: rgba(53, 165, 98, 0.63);
   border-radius: 5px;
-  margin-left: 24px;
   border: 0;
-  margin-top: 20px;
+  padding: 10px;
+  font-size: 17px;
+  margin: 5% 0 0 10%;
+}
+a.btn.btn1.btn-primary:hover {
+  background: rgba(50, 128, 81, 0.63);
 }
 
 .imgpr {
@@ -217,20 +221,18 @@ export default {
   font-size: 22px;
 }
 .titlepl {
-  margin-left: 360px;
+  margin: 5% 0 0 20%;
   font-size: 29px;
   color: #3e9661;
-  margin-top: 85px;
   padding: 30px;
   font-style: normal;
   font-weight: 400;
 }
 
 .titlepl2 {
-  margin-left: 400px;
+  margin: 5% 0 0 21%;
   font-size: 29px;
   color: #3e9661;
-  margin-top: 55px;
   font-style: normal;
   font-weight: 400;
 }
@@ -246,13 +248,14 @@ export default {
 .hrH {
   border-color: black;
 }
+.textop {
+  margin: 3% 0 3% 0;
+  text-align: left;
+}
 #c1 {
-  height: 690px;
+  height: 620px;
 }
 #c2 {
-  height: 690px;
-}
-.textop {
-  margin-top: 10px;
+  height: 620px;
 }
 </style>
