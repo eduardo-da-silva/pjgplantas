@@ -127,15 +127,14 @@ export default {
 .login-page {
   height: 100vh;
   font-family: Jomolhari;
-  margin: 10px;
 }
 .cform {
   background-color: white;
   border-radius: 8px;
-  padding: 55px;
-  margin-top: 180px;
-  margin-right: 360px;
-  height: 440px;
+  margin: 20% 40% 0 0%;
+  padding: 50px;
+  width: 500px;
+  height: 500px;
   align-items: center;
   box-shadow: 0px 4px 10px 10px rgba(15, 52, 6, 0.42);
 }
@@ -147,9 +146,10 @@ body {
   border-left: #0f3406;
 }
 .dlogin {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 29px;
   text-align: center;
+  margin: 5% 0 0 0;
 }
 a {
   color: #000000;
@@ -164,41 +164,32 @@ a:hover {
 .btncad {
   background-color: #3e9661;
   border: 0;
-  padding: 7px;
-  margin: 15px;
-  width: 120px;
-  font-size: 18px;
-  margin-top: 34px;
+  padding: 10px;
+  width: 130px;
+  font-size: 20px;
   border-radius: 4px;
+  margin: 10% 0 0 10%;
 }
 .btncad:hover {
   background-color: #3e9661;
 }
 .emsen {
-  margin-right: 250px;
   padding: 8px;
-  margin-top: 20px;
+  margin: 10% 0 0 0;
   font-size: 20px;
 }
 .btncad2 {
   margin-left: 5px;
   background: rgba(62, 150, 97, 0.95);
   border: 0;
-  padding: 7px;
+  padding: 10px;
   width: 150px;
-  font-size: 18px;
-  margin-top: 19px;
+  font-size: 20px;
   border-radius: 4px;
+  margin: 10% 0 0 10%;
 }
 .btncad2:hover {
   background-color: #3e9661;
-}
-
-#div-diagonal {
-  width: 2px;
-  height: 200px;
-  background: black;
-  transform: skew(20deg);
 }
 .titulo {
   position: absolute;
@@ -208,12 +199,7 @@ a:hover {
   line-height: 70px;
   mix-blend-mode: screen;
   font-family: Jomolhari;
-}
-.log {
-  margin-left: 350px;
-}
-.buttons {
-  align-content: center;
+  margin: 0 0 0 35%;
 }
 .hr1 {
   position: absolute;
@@ -237,26 +223,47 @@ a:hover {
   border: 1px solid #42c623;
   transform: rotate(-146.5deg);
 }
+.form-control {
+  padding: 1;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0% 5% 0 0;
+}
 
 @media (max-width: 844px) {
   .cform {
-    width: 100%;
-    margin-top: 60px;
-    margin-right: 35px;
+    width: 350px;
+    margin: 80% 0% 0 0;
+  }
+  .form-control {
+    margin: 3% 5% 0 0%;
+    padding: 1px;
   }
 
   .titulo {
-    margin-left: 61px;
+    margin: 10% 0 0 20%;
   }
-
+  .row {
+    margin: 20% 20% 0% 2%;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .buttons {
+    display: flex;
+    margin: 15% 13% 0 0;
+  }
   .btncad {
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+    height: 45px;
   }
   .btncad2 {
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+    height: 45px;
   }
 }
 </style>

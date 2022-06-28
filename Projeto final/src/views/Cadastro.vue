@@ -154,10 +154,10 @@ export default {
 .cform {
   background-color: white;
   border-radius: 8px;
-  padding: 55px;
-  margin-top: 180px;
-  margin-right: 360px;
-  height: 530px;
+  padding: 60px;
+  margin: 20% 40% 0 0%;
+  width: 500px;
+  height: 550px;
   align-items: center;
   box-shadow: 0px 4px 10px 10px rgba(15, 52, 6, 0.42);
 }
@@ -172,6 +172,7 @@ body {
   font-size: 30px;
   line-height: 29px;
   text-align: center;
+  margin: 2% 0 0 0;
 }
 a {
   color: #000000;
@@ -186,21 +187,19 @@ a:hover {
 .btncad {
   background-color: #3e9661;
   border: 0;
-  padding: 7px;
-  margin: 0 0 0 35%;
+  padding: 10px;
+  margin: 10% 0 0 35%;
   width: 120px;
-  font-size: 18px;
-  margin-top: 34px;
+  font-size: 20px;
   border-radius: 4px;
 }
 .btncad:hover {
   background-color: #3e9661;
 }
 .emsen {
-  margin-right: 250px;
   padding: 8px;
-  margin-top: 20px;
   font-size: 20px;
+  margin: 5% 0 0 0;
 }
 
 #div-diagonal {
@@ -217,9 +216,7 @@ a:hover {
   line-height: 70px;
   mix-blend-mode: screen;
   font-family: Jomolhari;
-}
-.log {
-  margin-left: 350px;
+  margin: 0 0 0 35%;
 }
 .hr1 {
   position: absolute;
@@ -249,26 +246,45 @@ a:hover {
 .custom-control-label::after {
   border: 1px solid #000000;
 }
+.form-control {
+  padding: 1;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0% 5% 0 0;
+}
 
 @media (max-width: 844px) {
   .cform {
-    width: 100%;
-    margin-top: 60px;
-    margin-right: 35px;
+    width: 350px;
+    margin: 70% 0% 0 0;
+  }
+  .form-control {
+    margin: 3% 5% 0 0%;
+    padding: 1px;
   }
 
   .titulo {
-    margin-left: 61px;
+    margin: 5% 0 0 20%;
   }
-
+  .row {
+    margin: 20% 20% 0% 2%;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .buttons {
+    margin: 10% 50% 0 0;
+  }
   .btncad {
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+    height: 45px;
   }
-  .btncad2 {
-    align-items: center;
-    justify-content: center;
+  .emsen {
+    margin: 9% 0 0 0;
   }
 }
 </style>
