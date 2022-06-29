@@ -258,4 +258,50 @@ a.btn.btn1.btn-primary:hover {
 #c2 {
   height: 620px;
 }
+@media (max-width: 844px) {
+  .dprincipal {
+    width: auto;
+    height: auto;
+  }
+  .navpr {
+    box-shadow: none;
+  }
+
+  .navbar-nav {
+    margin-right: 100px;
+  }
+  #c1 {
+    height: 280px;
+  }
+  #c2 {
+    height: 280px;
+  }
+  .section {
+    margin: 0 0 30% 0;
+  }
+  #footer {
+    margin: 0 0 0 5%;
+    display: flex;
+  }
+  .titlepl {
+    font-size: 25px;
+    text-align: left;
+    margin: 0 0 5% 5%;
+    padding: 10px;
+  }
+  .titlepl2 {
+    white-space: nowrap;
+    font-size: 25px;
+    text-align: left;
+    margin: 10% 0 5% 6%;
+    padding: 10px;
+  }
+  .col {
+    padding: 20px;
+    margin: 0 20% 0 0;
+  }
+  .card {
+    margin: 0 0 0 5%;
+  }
+}
 </style>

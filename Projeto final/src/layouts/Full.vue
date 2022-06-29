@@ -52,7 +52,7 @@
 
 <style lang="scss">
 .hrlay {
-  margin-top: 100px;
+  margin: 5% 0 0 0;
   border-color: #3e9661;
 }
 .navpr {
@@ -70,13 +70,9 @@
   padding: 20px;
 }
 #footer {
-  height: 205px;
-  margin-top: 90px;
   color: #3e9661;
   font-size: 25px;
-}
-.footer1 {
-  margin-right: 10px;
+  margin: 5% 0 0 20%;
 }
 #navb {
   font-size: 23px;
@@ -84,7 +80,7 @@
   font-weight: bold;
 }
 .footer2 {
-  margin-left: 250px;
+  margin: 0 0 0 15%;
 }
 .drop1 {
   background: rgba(62, 150, 97, 0.92);
@@ -99,7 +95,7 @@
   border-radius: 3px;
 }
 .navbar-nav {
-  margin-right: 5px;
+  margin: 0 2% 0 0;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #84cca1;

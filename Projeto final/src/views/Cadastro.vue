@@ -2,7 +2,7 @@
   <body>
     <hr class="hr1" />
     <hr class="hr2" />
-    <b-container class="login-page" fluid>
+    <b-container class="login-page">
       <b-row align-v="center">
         <b-col class="log">
           <h1 class="titulo">
@@ -251,6 +251,9 @@ a:hover {
   font-size: 16px;
   font-weight: bold;
   margin: 0% 5% 0 0;
+}
+.row {
+  display: block;
 }
 
 @media (max-width: 844px) {
