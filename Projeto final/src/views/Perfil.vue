@@ -115,6 +115,10 @@ export default {
   padding: 20px;
   text-align: center;
 }
+.login-page {
+  background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-folhas-verdes-tropicais_53876-88891.jpg?t=st=1655655273~exp=1655655873~hmac=130a104d203ac8ab45624aaaa9f7d5fb5dea77ef494644a3636d38a0f738fc3a&w=1380");
+  opacity: 90%;
+}
 .divs {
   color: black;
   font-style: normal;
@@ -132,6 +136,8 @@ export default {
   border: 0;
   margin: 10% 0 0 40%;
 }
+
+
 .btnp:hover {
   background: rgba(25, 57, 124, 0.63);
   opacity: 90%;
@@ -143,6 +149,7 @@ export default {
   height: 720px;
   width: 75vh;
   margin: 10% 0 10% 0;
+  background-color: white;
 }
 .form-control {
   background: white;
@@ -151,5 +158,14 @@ export default {
 }
 .forms {
   margin: 2% 0 2% 0;
+}
+
+@media (max-width: 390px) {
+  .navpr {
+    box-shadow: none;
+  }
+  .col {
+    width: 200px;
+  }
 }
 </style>

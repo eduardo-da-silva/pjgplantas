@@ -263,6 +263,9 @@ a.btn.btn1.btn-primary:hover {
     width: auto;
     height: auto;
   }
+  .row {
+    margin: 0;
+  }
   .navpr {
     box-shadow: none;
   }

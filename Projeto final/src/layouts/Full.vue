@@ -101,7 +101,16 @@
   color: #84cca1;
 }
 
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #84cca1;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #3e9661;
+}
+@media (max-width: 844px) {
+  .navpr {
+    box-shadow: none;
+  }
 }
 </style>

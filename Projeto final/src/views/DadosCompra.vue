@@ -188,11 +188,10 @@ export default {
 }
 
 .col2 {
-  margin-left: 200px;
+  margin: 0 0 0 20%;
 }
 .imagens {
-  margin-top: 100px;
-  margin: 0px 10px 10px 0px;
+  margin: 5% 0 0 0;
 }
 .button {
   padding: 15px;
@@ -218,5 +217,34 @@ export default {
   background: #ff691e;
   opacity: 80%;
   color: white;
+}
+@media (max-width: 844px) {
+  .col1 {
+    margin: 0 0 0 4%;
+  }
+  .col2 {
+    margin: 0 10% 0 5%;
+  }
+  .subtitle {
+    text-align: center;
+  }
+  .button {
+    margin: 2% 0 10% 30%;
+  }
+  .imagens {
+    margin-bottom: 10%;
+  }
+  #footer {
+    margin: 0 0 0 5%;
+    display: flex;
+  }
+  .footer1 {
+    margin: 5% 0 0 0;
+    text-align: center;
+  }
+  .footer2 {
+    margin: 0 20% 0 0;
+    text-align: center;
+  }
 }
 </style>

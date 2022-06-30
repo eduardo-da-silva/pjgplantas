@@ -3,13 +3,12 @@
     <b-row class="row">
       <b-col class="col1">
         <img
-          src="https://img.freepik.com/psd-gratuitas/sombra-de-folhas-de-palmeira-na-parede_53876-84542.jpg?t=st=1655673278~exp=1655673878~hmac=f8b41a2447ba456492405f6e40ac1e574cceb38c893f2629b627779e06b3a654&w=826"
+          src="https://http2.mlstatic.com/D_NQ_NP_963647-MLB48382302651_112021-W.webp"
           alt=""
-          height="840px"
-          width="100%"
+          class="img"
         />
       </b-col>
-      <b-col class="col2 border border-light">
+      <b-col class="col2">
         <h1><div class="nome">Nome do Produto</div></h1>
         <br />
         <br />
@@ -63,7 +62,6 @@ export default {
 }
 .produto {
   padding: 30px;
-  margin-top: 15px;
   font-family: "Jomolhari", serif;
   height: 100vh;
 }
@@ -129,5 +127,58 @@ export default {
 }
 .spinb {
   margin: 0 0 0 12%;
+}
+
+@media (max-width: 844px) {
+  .row {
+    border: 0;
+    width: 390px;
+  }
+  .col1 {
+    width: 390px;
+    box-shadow: none;
+    border-style: solid none solid none;
+    border-color: #0f3406;
+  }
+  .navpr {
+    box-shadow: none;
+  }
+  .produto {
+    padding: 0;
+    height: 1150px;
+  }
+  .img {
+    width: 390px;
+    height: 390px;
+  }
+  .col2 {
+    width: 390px;
+    box-shadow: none;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+  .dprincipal {
+    width: 390px;
+  }
+  .nome {
+    margin: 15% 0 0 0;
+    text-align: center;
+  }
+  .btncad {
+    margin: 9% 0 0 35%;
+  }
+  #footer {
+    margin: 0 0 0 5%;
+    display: flex;
+  }
+  .footer1 {
+    margin: 5% 0 0 0;
+    text-align: center;
+  }
+  .footer2 {
+    margin: 0 20% 0 0;
+    text-align: center;
+  }
 }
 </style>
