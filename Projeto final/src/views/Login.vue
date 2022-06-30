@@ -14,13 +14,12 @@
           <b-form
             class="cform"
             @submit.prevent="login"
-            @reset="onReset"
-            v-if="show"
+            v-if="showLogin===true"
           >
-            <div class="dlogin">
-              <a href="/login"> Login</a> <span>|</span>
-              <a href="/cadastro">Cadastro</a>
+          <div class="dlogin">
+              <a @click="showLogin=!showLogin"> {{ showLogin ? 'Cadastrar' : 'Logar'}}</a>
             </div>
+            
             <div class="emsen">Email:</div>
             <b-form-group id="input-group-1">
               <b-form-input
@@ -54,6 +53,47 @@
               <b-button class="btncad2">Administrar</b-button>
             </div>
           </b-form>
+           <b-form
+            class="cform"
+            @submit.prevent="login"
+            v-else
+          >
+           <div class="dlogin">
+              <a @click="showLogin=!showLogin"> {{ showLogin ? 'Cadastrar' : 'Logar'}}</a>
+            </div>
+            <div class="emsen">Email2222222:</div>
+            <b-form-group id="input-group-1">
+              <b-form-input
+                v-model="form.email"
+                type="email"
+                style="
+                  background: white;
+                  border-style: none none solid none;
+                  border-color: rgba(62, 150, 97, 0.95);
+                "
+                placeholder="Insira seu email"
+              >
+              </b-form-input>
+            </b-form-group>
+            <div class="emsen">Senha2222222:</div>
+            <b-form-group id="input-group-1">
+              <b-form-input
+                type="password"
+                v-model="form.password"
+                required
+                style="
+                  background: white;
+                  border-style: none none solid none;
+                  border-color: rgba(62, 150, 97, 0.95);
+                "
+                placeholder="Insira sua senha"
+              ></b-form-input>
+            </b-form-group>
+            <div class="buttons">
+              <b-button class="btncad" type="submit">Logar</b-button>
+              <b-button class="btncad2">Administrar</b-button>
+            </div>
+          </b-form>
         </b-col>
       </b-row>
     </b-container>
@@ -68,7 +108,7 @@ export default {
         email: "",
         password: "",
       },
-      show: true,
+      showLogin: true,
     };
   },
   methods: {
@@ -107,19 +147,19 @@ export default {
       //   });
     },
   },
-  onReset(event) {
-    event.preventDefault();
-    // Reset our form values
-    this.form.email = "";
-    this.form.name = "";
-    this.form.food = null;
-    this.form.checked = [];
-    // Trick to reset/clear native browser form validation state
-    this.show = false;
-    this.$nextTick(() => {
-      this.show = true;
-    });
-  },
+  // onReset(event) {
+  //   event.preventDefault();
+  //   // Reset our form values
+  //   this.form.email = "";
+  //   this.form.name = "";
+  //   this.form.food = null;
+  //   this.form.checked = [];
+  //   // Trick to reset/clear native browser form validation state
+  //   this.show = false;
+  //   this.$nextTick(() => {
+  //     this.show = true;
+  //   });
+  // },
 };
 </script>
 
